@@ -31,10 +31,10 @@ def generate_account(users):
         element = {
             "Cuenta": user_create(user["nombre"], user["edad"]),
             # Asignaremos una contraseña a la cuenta
-            "Contraseña": passwoord_create(10)
+            "Contraseña": passwoord_create(14)
         }
         account.append(element)
-        return account
+    return account
     
 # Creamos funcion para pedir al usuario ingresar su numero de telefono
 def phone_number(users):
@@ -44,6 +44,7 @@ def phone_number(users):
             # Mediante lo siguiente verificamos que el numero de telefono contenga 8 digitos
             if len(phone) == 8 and phone.isnumeric():
                 user["telefono"] = phone
+                break
             else:
                 print("\n\nSu numero de telefono debe tener solo 8 digitos, intentelo nuevamente.\n")
     return users

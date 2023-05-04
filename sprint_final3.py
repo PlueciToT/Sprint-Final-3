@@ -65,7 +65,7 @@ users = [
         "edad": 43,
         "genero": "Masculino",
         "direccion": "Baquedano 398",
-    },
+    }
 ]
 
 # Elaboramos que recorra una lista de 10 usuarios mediante un print llamando el nombre de la lista
@@ -76,8 +76,10 @@ print("\n"+"=-="*20+"\n")
 # cada cuenta debera guardarse con un atributo nuevo
 access = generate_account(users)
 print(access)
+print()
 print("\n")
 
 phones = phone_number(users)
+print("\n")
 print(users)
 print("=-="*20+"\n")
